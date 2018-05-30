@@ -3,31 +3,31 @@ general notes on how to use docker
 
 #### Going to just assume I'm using an ubuntu image or container the entire time
 
-Pull an image
+##### Pull an image
 
 * docker pull ubuntu
 
 <hr>
 
-Run an image and log into the shell. -i makes it interactive. -t allocates a psuedo tty.
+##### Run an image and log into the shell. -i makes it interactive. -t allocates a psuedo tty.
 
 * docker run -it ubuntu bash
 
 <hr>
 
-Run an image but do not log into the shell
+##### Run an image but do not log into the shell
 
 * docker run -itd ubuntu bash
 
 <hr>
 
-Show current active containers
+##### Show current active containers
 
 * docker ps
 
 <hr>
 
-Show all containers
+##### Show all containers
 
 * docker ps -a
 
