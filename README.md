@@ -35,39 +35,39 @@ Show all containers
 
 #### For examples below, my container's name is `silly_mcnulty`
 
-Show information about the container in json format. use grep to find specific fields. 
+##### Show information about the container in json format. use grep to find specific fields. 
 
 * docker inspect silly_mcnulty
 
 <hr>
 
-Log into the container's shell that is already running
+##### Log into the container's shell that is already running
 
 * docker attach silly_mcnulty
 
 <hr>
 
-Stop the container 
+##### Stop the container 
 
 * docker stop silly_mcnulty
 
 <hr>
 
-Restart a container (using docker ps -a to show the non running container)
+##### Restart a container (using docker ps -a to show the non running container)
 
-docker restart silly_mcnulty
+* docker restart silly_mcnulty
 
 <hr>
 
-Create an image with preconfigured settings from an already created instance (i.e. - you installed apache2 and want to always launch a container with it already running)
+##### Create an image with preconfigured settings from an already created instance (i.e. - you installed apache2 and want to always launch a container with it already running)
 
-docker commit -m 'apache2 installed and running' -a lucassha silly_mcnulty ubunapache:v1
+* docker commit -m 'apache2 installed and running' -a lucassha silly_mcnulty ubunapache:v1
 
 -m for the message. -a for the username. last portion is the name of the new image.
 
 <hr>
 
-Create a port passthrough during bootup of an image. Use elinks to check it's functional.
+##### Create a port passthrough during bootup of an image. Use elinks to check it's functional.
 
 * docker run -dp 2345:80 nginx
 
